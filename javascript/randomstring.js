@@ -29,16 +29,21 @@ $(document).ready(function() {
     else if (computerChoice ===2) {
     computerAttack= "scissors";
   }
-    console.log(playerChoice)
-    console.log(computerAttack)
+    console.log(playerChoice, computerAttack)
 
-    if (playerChoice === "rock" && computerAttack === "rock") {
-        alert("it's a tie!");
+
+    if (playerChoice === computerAttack) {
+        console.log("tie");
       }
- 
-    else{
-      // prompt('you win!')
+    
+    else if ((playerChoice === "rock" && computerAttack ==="paper")||(playerChoice === "paper" && computerAttack ==="scissors")||(playerChoice === "scissors" && computerAttack ==="rock")) {
+    console.log("you lose");
     }
+
+    else if ((playerChoice === "rock" && computerAttack ==="scissors")||(playerChoice === "scissors" && computerAttack ==="paper")||(playerChoice === "paper" && computerAttack ==="rock"))  {
+        console.log("you win!");
+    }
+ 
 
 
     

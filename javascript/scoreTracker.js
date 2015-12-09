@@ -1,4 +1,4 @@
-window.helloGoodbye = {
+window.RPS = {
   gameState: {
     userScore: 0,
     computerScore: 0,
@@ -6,15 +6,4 @@ window.helloGoodbye = {
   }
 }
 
-$(document).ready(function() {
-
-  $(".btn-info").on("click", function() {
-    // var tagName = $(this).data("tag");
-    // helloGoodbye.gameState[tagName]++;
-    prompt('herro')
-
-    // $("#" + tagName).html(helloGoodbye.gameState[tagName]);
-  });
-
-});
 

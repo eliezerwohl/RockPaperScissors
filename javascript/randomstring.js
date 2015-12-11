@@ -13,16 +13,16 @@ function bindControl() {
 
 function playersMove(){
    $(".btn").off();
-   
+
   console.log(playerChoice)
   if (playerChoice === "rock") {
-    $(".fa-hand-rock-o").addClass("slideDown");
+    $(".fa-hand-rock-o").fadeTo("slow", 1.0).delay(1500).fadeTo("slow", 0.3);
   }
   else if(playerChoice === "paper") {
-    $(".fa-hand-paper-o").addClass("slideDown");
+    $(".fa-hand-paper-o").fadeTo("slow", 1.0).delay(1500).fadeTo("slow", 0.3);
   }
     else if(playerChoice === "scissors") {
-    $(".fa-hand-scissors-o").addClass("slideDown");
+    $(".fa-hand-scissors-o").fadeTo("slow", 1.0).delay(1500).fadeTo("slow", 0.3);
   }
 }
 

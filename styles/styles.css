@@ -1,3 +1,9 @@
 .fa {
   font-size:100px;
+  opacity: 0.3;
 }
+.screen {
+  border:4px black solid;
+  background-color: gray;
+}
+

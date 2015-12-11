@@ -2,11 +2,13 @@
 <html>
 <head>
   <title></title>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles/shapes.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
   <link rel="stylesheet" type="text/css" href="styles/animations.css">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -25,22 +27,36 @@
     <div class="row">
       <div class="col-md-4">
         <strong>User Score: </strong><span id="userScore">0</span>
-        <br />
-        <!-- <button class="btn btn-info btn-block" data-tag="userScore">Increment User Score</button> -->
       </div>
       <div class="col-md-4">
         <strong>Computer Score: </strong><span id="computerScore">0</span>
-        <br />
-        <!-- <button class="btn btn-info btn-block" data-tag="computerScore">Increment Computer Score</button> -->
       </div>
       <div class="col-md-4">
         <strong>Round Count: </strong><span id="roundCount">1</span>
-
-        <div> computer moves </div>
-        <br /> <i class="fa fa-hand-rock-o"></i>
-        <i class="fa fa-hand-scissors-o"></i>
-        <i class="fa fa-hand-paper-o"></i>  
-       <!--  <button class="btn btn-info btn-block" data-tag="roundCount">Increment Round Count</button> -->
+        <div> computer moves </div> 
+      </div>
+    </div>
+    <div class="container screen">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-4">
+           <i class="fa fa-hand-rock-o"></i>
+          </div>
+          <div class="col-md-4">
+            <i class="fa fa-hand-scissors-o"></i>
+          </div>
+          <div class="col-md-4">
+          <i class="fa fa-hand-paper-o"></i>  
+          </div>
+        </div><!-- col md 12 -->
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+        <h3 class="playerTurn">YOUR TURN</h3>
+        </div>
+        <div clas="col-md-6">
+          <h3 class="computerTurn">COMPUTER MAN TURN! </h3>
+        </div>
       </div>
     </div>
   </div>

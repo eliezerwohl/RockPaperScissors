@@ -16,13 +16,13 @@ function playersMove(){
 
   console.log(playerChoice)
   if (playerChoice === "rock") {
-    $(".fa-hand-rock-o").fadeTo("slow", 1.0).delay(1500).fadeTo("slow", 0.3);
+    $(".fa-hand-rock-o, .playerTurn").fadeTo("slow", 1.0).delay(1500).fadeTo("slow", 0.3);
   }
   else if(playerChoice === "paper") {
-    $(".fa-hand-paper-o").fadeTo("slow", 1.0).delay(1500).fadeTo("slow", 0.3);
+    $(".fa-hand-paper-o, .playerTurn").fadeTo("slow", 1.0).delay(1500).fadeTo("slow", 0.3);
   }
     else if(playerChoice === "scissors") {
-    $(".fa-hand-scissors-o").fadeTo("slow", 1.0).delay(1500).fadeTo("slow", 0.3);
+    $(".fa-hand-scissors-o, .playerTurn").fadeTo("slow", 1.0).delay(1500).fadeTo("slow", 0.3);
   }
 }
 
@@ -36,28 +36,13 @@ function gameLogic() {
   var computerChoice = Math.floor(Math.random() * attackOptions.length);
   if (computerChoice === 0) {
     computerAttack = "paper";
-    $(".fa-hand-paper-o").addClass("slideUp");
-
-    setTimeout(function() {
-      $(".fa-hand-paper-o").removeClass("slideUp");
-      bindControl();
-    }, 700);
+    $(".fa-hand-scissors-o, .computerTurn").fadeTo("slow", 1.0).delay(1500).fadeTo("slow", 0.3);
   } else if (computerChoice === 1) {
     computerAttack = "rock";
-
-    $(".fa-hand-rock-o").addClass("slideUp");
-    setTimeout(function() {
-      $(".fa-hand-rock-o").removeClass("slideUp");
-      bindControl();
-    }, 700);
+    $(".fa-hand-scissors-o, .computerTurn").fadeTo("slow", 1.0).delay(1500).fadeTo("slow", 0.3);
   } else if (computerChoice === 2) {
     computerAttack = "scissors";
-
-    $(".fa-hand-scissors-o").addClass("slideUp");
-    setTimeout(function() {
-      $(".fa-hand-scissors-o").removeClass("slideUp");
-      bindControl();
-    }, 700);
+    $(".fa-hand-scissors-o, .computerTurn").fadeTo("slow", 1.0).delay(1500).fadeTo("slow", 0.3);
   }
   console.log(playerChoice, computerAttack)
 

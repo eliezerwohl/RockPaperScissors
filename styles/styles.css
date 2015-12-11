@@ -3,7 +3,7 @@
   opacity: 0.3;
 }
 
-.playerTurn, .computerTurn {
+.playerTurn, .computerTurn, .playerVictory, .computerVictory, .playerTie {
   opacity: 0.3;
 }
 .screen {

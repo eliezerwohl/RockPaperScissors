@@ -3,19 +3,23 @@
 <head>
   <title></title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/shapes.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/animations.css">
 </head>
 
 <body>
   <div class="container-fluid">
     <div class="row-fluid">
       <div class="col-md-4">
-        <button class="rock btn btn-default">Rock</button>
+        <button class="btn btn-default" data-choice="rock">Rock</button>
       </div>
       <div class="col-md-4">
-      <button class="paper btn btn-default"> paper </button>
+      <button class="btn btn-default" data-choice="paper"> paper </button>
       </div>
       <div class="col-md-4">
-      <button class="scissors btn btn-default"> scissors </button>
+      <button class="btn btn-default" data-choice="scissors"> scissors </button>
       </div>
     </div>
     <div class="row">
@@ -31,11 +35,15 @@
       </div>
       <div class="col-md-4">
         <strong>Round Count: </strong><span id="roundCount">1</span>
-        <br />
+
+        <div> computer moves </div>
+        <br /> <i class="fa fa-hand-rock-o"></i>
+        <i class="fa fa-hand-scissors-o"></i>
+        <i class="fa fa-hand-paper-o"></i>  
        <!--  <button class="btn btn-info btn-block" data-tag="roundCount">Increment Round Count</button> -->
       </div>
     </div>
-    <div class="row">
+  </div>
 
   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

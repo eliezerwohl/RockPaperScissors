@@ -1,0 +1,49 @@
+@eliezerwohl: with `$("span")`, that jQuery function returns an array of the DOM elements that match the selector, in this case a `<span>`
+
+​[6:50] 
+the `.each(function() { ... }` is a jQuery function that allows you to loop through the array, just like a `for` loop in Javascript
+
+eliezerwohl [6:51 PM] 
+how do I know what the “this” targets?
+
+albert.bahia [6:52 PM] 
+cool, just about to get to that.  we'll break down the line `$(this).html(RPS.gameState[$(this).attr("id")]);` step by step
+
+​[6:53] 
+`this` refers to current object, in this case it's the `<span>`
+
+​[6:56] 
+the `<span>`/`this` returned to you is a jQuery object, so you can apply any jQuery function to it
+
+​[6:58] 
+in this case, we're using the `.html()` function, which either get the HTML contents of the DOM element we're dealing with or sets the HTML content of the DOM element we're dealing with
+
+eliezerwohl [7:03 PM] 
+so in this case it sets the html content
+
+albert.bahia [7:03 PM] 
+yes
+
+​[7:03] 
+the argument we're giving the `.html` function, RPS.gameState[$(this).attr("id") allows us to access the state of the game
+
+​[7:05] 
+this is the technique I used, ```$("span").each(function() {
+     console.log($(this));
+     console.log(RPS.gameState);
+     console.log(RPS.gameState[$(this).attr("id")]);
+     $(this).html(RPS.gameState[$(this).attr("id")]);
+   });
+
+​[7:07] 
+this allows you to set html content, which in our case is printing out the user score, computer score, and round number
+
+eliezerwohl [7:08 PM] 
+ok
+
+albert.bahia [7:10 PM] 
+RPS.gameState returns `Object {userScore: 1, computerScore: 0, roundCount: 4}` in the console
+
+​[7:11] 
+`$(this).attr("id")`returns the `id` of the span's, which is `userScore, computerScore, roundCount`
+

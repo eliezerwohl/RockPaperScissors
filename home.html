@@ -14,20 +14,21 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container screen">
     <div class="row">
-      <div class="col-md-4">
-        <strong>User Score: </strong><span id="userScore">0</span>
-      </div>
-      <div class="col-md-4">
-        <strong>Computer Score: </strong><span id="computerScore">0</span>
-      </div>
-      <div class="col-md-4">
-        <strong>Round Count: </strong><span id="roundCount">1</span>
+      <div class="col-xs-12">
+        <div class="col-xs-4">
+          <strong>User Score: </strong><span id="userScore">0</span>
+        </div>
+        <div class="col-xs-4">
+          <strong>Computer Score: </strong><span id="computerScore">0</span>
+        </div>
+        <div class="col-xs-4">
+          <strong>Round Count: </strong><span id="roundCount">1</span>
+        </div>
       </div>
     </div>
-  </div>
-    <div class="container screen">
+    <br/>
       <div class="row">
         <div class="col-md-12">
           <div class="col-xs-4">
@@ -51,16 +52,17 @@
       </div>
       <div class="row">
         <div class="col-xs-4">
-          <h4 class="playerVictory">YOU ARE VICTORY!</h4>
+          <h4 class="playerVictory">YOU ARE<strong> VICTORY! </strong></h4>
         </div>
         <div class="col-xs-4">
-          <h4 class="computerVictory">SO DEFEATED!</h4>
+          <h4 class="computerVictory">SO <strong>DEFEATED!</strong></h4>
         </div>
          <div class="col-xs-4">
-          <h4 class="playerTie">A WINNER IS NONE!</h4>
+          <h4 class="playerTie">A WINNER IS <strong>NONE!</strong></h4>
         </div>
       </div>
       <div class="row control">
+      <br/>
         <div class="col-xs-3">
           <button class="btn btn-danger btn-lg control-btn" data-choice="rock">ROCK&nbsp </button>
           <button class="btn btn-danger btn-lg control-btn" data-choice="paper">PAPER </button>
@@ -79,9 +81,10 @@
 
   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script type="text/javascript" src="javascript/randomstring.js"></script>
   <script type="text/javascript" src="javascript/scoreTracker.js"></script>
+  <script type="text/javascript" src="javascript/firebase.js"></script>
 </body>
 </html>

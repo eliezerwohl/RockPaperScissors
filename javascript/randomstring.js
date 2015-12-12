@@ -6,7 +6,7 @@ function bindControl() {
     playerChoice = $(this).attr('data-choice'); 
     playersMove();  
     setTimeout(gameLogic, 3000);
-    setTimeout(bindControl, 6000);  
+    setTimeout(bindControl, 5500);  
   });
 }
 
@@ -32,10 +32,10 @@ function gameLogic() {
   var computerChoice = Math.floor(Math.random() * attackOptions.length);
   if (computerChoice === 0) {
     computerAttack = "paper";
-    $(".fa-hand-scissors-o, .computerTurn").fadeTo("fast", 1.0).delay(2000).fadeTo("fast", 0.3);
+    $(".fa-hand-paper-o, .computerTurn").fadeTo("fast", 1.0).delay(2000).fadeTo("fast", 0.3);
   } else if (computerChoice === 1) {
     computerAttack = "rock";
-    $(".fa-hand-scissors-o, .computerTurn").fadeTo("fast", 1.0).delay(2000).fadeTo("fast", 0.3);
+    $(".fa-hand-rock-o, .computerTurn").fadeTo("fast", 1.0).delay(2000).fadeTo("fast", 0.3);
   } else if (computerChoice === 2) {
     computerAttack = "scissors";
     $(".fa-hand-scissors-o, .computerTurn").fadeTo("fast", 1.0).delay(2000).fadeTo("fast", 0.3);

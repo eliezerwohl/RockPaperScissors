@@ -5,3 +5,15 @@ window.RPS = {
     roundCount: 1
   }
 }
+
+$(document).ready(function(){
+var roundCount = $("#roundCount");
+console.log (roundCount.text())
+
+  function scoreReset(){
+    if  (roundCount.text() = 2) {
+    prompt("this is 2")
+  }
+
+}
+});

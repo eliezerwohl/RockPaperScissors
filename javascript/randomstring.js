@@ -59,11 +59,11 @@ function gameLogic() {
   $("span").each(function() {
     $(this).html(RPS.gameState[$(this).attr("id")]);
   });
-//   var roundCount =$("#roundCount").val()
-// console.log(roundCount.val())
-//   if (("#roundCount".val())=3){
-//   prompt("hey joe")
-// }
+  var roundCount =$("#roundCount").val()
+console.log(roundCount.val())
+  if (("#roundCount".val())=3){
+  prompt("hey joe")
+}
 }
 
 

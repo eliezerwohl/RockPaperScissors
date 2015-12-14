@@ -1,8 +1,10 @@
 var playerChoice, computerAttack, userScore, computerScore;
 var attackOptions = ["Rock", "Paper", "Scissors"];
+var amountOfRounds = $ ("#amountOfRounds").val()
+
 
 function bindControl() {
-  $(".btn").on("click", function() {          
+  $(".btn-danger").on("click", function() {          
     playerChoice = $(this).attr('data-choice'); 
     playersMove();  
     setTimeout(gameLogic, 3000);
@@ -11,8 +13,7 @@ function bindControl() {
 }
 
 function playersMove(){
-   $(".btn").off();
-
+   $(".btn-danger").off();
   console.log(playerChoice)
   if (playerChoice === "rock") {
     $(".fa-hand-rock-o, .playerTurn").fadeTo("fast", 1.0).delay(2000).fadeTo("fast", 0.3);
@@ -25,10 +26,7 @@ function playersMove(){
   }
 }
 
-
 function gameLogic() {
-
-
   var computerChoice = Math.floor(Math.random() * attackOptions.length);
   if (computerChoice === 0) {
     computerAttack = "paper";
@@ -61,8 +59,17 @@ function gameLogic() {
   $("span").each(function() {
     $(this).html(RPS.gameState[$(this).attr("id")]);
   });
+//   var roundCount =$("#roundCount").val()
+// console.log(roundCount.val())
+//   if (("#roundCount".val())=3){
+//   prompt("hey joe")
+// }
 }
+
+
 
 $(document).ready(function(){
 bindControl();  
+
+// $('#myModal').modal('show') 
 });

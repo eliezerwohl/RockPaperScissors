@@ -5,5 +5,3 @@ window.RPS = {
     roundCount: 1
   }
 }
-
-

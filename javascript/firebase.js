@@ -1,1 +1,4 @@
-var myDataRef = new Firebase('https://radiant-fire-9704.firebaseio.com/');
+// var myDataRef = new Firebase('https://s9jarevefww.firebaseio-demo.com/');
+
+
+// $(#exampleInputEmail1).val 
